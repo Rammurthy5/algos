@@ -1,4 +1,4 @@
-Information about how a specific algorithm works, time complexity, space complexity, and their realtime usecases. 
+Information about how a specific algorithm works (basic properties, operations, time complexity, space complexity), and their realtime usecases. 
 Finally, actual implementation
 
 1. Binary Tree
