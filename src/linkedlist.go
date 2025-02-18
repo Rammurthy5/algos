@@ -1,4 +1,4 @@
-package main
+package src
 
 import (
 	"errors"
@@ -89,7 +89,7 @@ func (ll *LinkedList) Display() {
 	fmt.Println("NULL")
 }
 
-func main() {
+func LinkedListRun() {
 	// Create a new LinkedList
 	ll := New()
 

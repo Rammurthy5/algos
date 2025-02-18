@@ -1,0 +1,8 @@
+package main
+
+import "github.com/Rammurthy5/algos/src"
+
+func main() {
+	src.LinkedListRun()
+	src.HashMapRun()
+}
