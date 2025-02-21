@@ -1,4 +1,8 @@
-A binary tree is a tree data structure in which each node has at most two children, referred to as the left child and the right child.
+A binary tree is a tree data structure in which each node has at most two children,
+ referred to as the left child and the right child. it uses Linked List underneath. the difference is LL is
+ linear(sequential) and Trees are hierarchical. memory is dynamically allocated unlike array 
+ (which is initialized with a fixed size for the continous block of memory for 
+ Fast random access O(1) access time using an index).
 
 ## types
 Full Binary Tree: Every node other than the leaves has two children.
@@ -10,3 +14,9 @@ Inorder (Left, Root, Right) - useful for sorted BST traversal.
 Preorder (Root, Left, Right) - useful for tree reconstruction.
 Postorder (Left, Right, Root) - useful for deletion operations.
 Level Order - breadth-first traversal
+
+## Usecases
+file storage system hierarchies.
+
+## time complexity 
+O(n) for all worst case search, insert, delete.
