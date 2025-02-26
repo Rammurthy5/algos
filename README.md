@@ -6,3 +6,5 @@ Finally, actual implementation
 3. Recursion
 4. Binary Tree
 5. Binary Search Tree
+6. stacks and queue
+7. Trie
