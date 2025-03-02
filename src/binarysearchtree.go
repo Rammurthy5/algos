@@ -122,3 +122,29 @@ func (bst *BinarySearchTree) Delete(item int) (bool, error) {
 	}
 	return true, nil
 }
+
+func BinarySearchTreeRun() {
+	bst := NewBST()
+	bst.Insert(5)
+	bst.Insert(3)
+	bst.Insert(8)
+	bst.Insert(1)
+	bst.Insert(4)
+	bst.Insert(7)
+
+	// Search
+	node := bst.Search(3)
+	if node != nil {
+		println("Found:", node.value)
+	} else {
+		println("Not found")
+	}
+
+	// Delete
+	deleted, err := bst.Delete(3)
+	if deleted {
+		println("Deleted 3")
+	} else {
+		println(err)
+	}
+}

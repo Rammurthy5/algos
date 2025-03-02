@@ -17,7 +17,7 @@ type LinkedList struct {
 	mu   sync.RWMutex // Lock for thread safety
 }
 
-func New() *LinkedList {
+func NewLinkedList() *LinkedList {
 	return &LinkedList{}
 }
 
@@ -91,7 +91,7 @@ func (ll *LinkedList) Display() {
 
 func LinkedListRun() {
 	// Create a new LinkedList
-	ll := New()
+	ll := NewLinkedList()
 
 	// Insert data into the list
 	ll.Insert(10)

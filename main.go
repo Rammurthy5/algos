@@ -5,4 +5,7 @@ import "github.com/Rammurthy5/algos/src"
 func main() {
 	src.LinkedListRun()
 	src.HashMapRun()
+	src.BinaryTreeRun()
+	src.BinarySearchTreeRun()
+	src.StacksQueuesRun()
 }

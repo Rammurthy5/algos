@@ -167,7 +167,7 @@ func (b *BinaryTree) BFSTraversal() []any {
 }
 
 // Main for testing
-func main() {
+func BinaryTreeRun() {
 	bt := NewBinaryTree()
 	bt.Insert(1)
 	bt.Insert(2)
