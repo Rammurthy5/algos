@@ -8,3 +8,4 @@ Finally, actual implementation
 5. Binary Search Tree
 6. stacks and queue
 7. Trie
+8. heaps

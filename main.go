@@ -8,4 +8,5 @@ func main() {
 	src.BinaryTreeRun()
 	src.BinarySearchTreeRun()
 	src.StacksQueuesRun()
+	src.TrieRun()
 }
