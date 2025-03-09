@@ -7,5 +7,13 @@ Finally, actual implementation
 4. Binary Tree
 5. Binary Search Tree
 6. stacks and queue
-7. Trie
-8. heaps
+7. standard Trie
+8. compressed trie
+9. heaps
+10. bitwise trie
+11. suffix trie
+12. finite state trie
+13. red black tree
+14. avl tree
+15. merkle trie
+16. segment tree / fenwick tree 
