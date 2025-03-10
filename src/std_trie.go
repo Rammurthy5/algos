@@ -85,7 +85,7 @@ func (t *Trie) Delete(word string) error {
 
 	// If the word doesn't exist, deleteHelper will return false, but we treat it as a no-op
 	if deleted := t.deleteHelper(t.Root, word, 0); !deleted {
-		fmt.Print("Word '%s' not found in the Trie during deletion", word)
+		fmt.Printf("Word '%s' not found in the Trie during deletion", word)
 	}
 	return nil
 }
@@ -125,7 +125,17 @@ func TrieRun() {
 	trie.Insert("app")
 	trie.Insert("ap")
 	trie.Insert("a")
-	fmt.Println("apple exist? ", trie.Search("apple"))
+	exists, err := trie.Search("apple")
+	if err != nil {
+		fmt.Println("Error searching for 'apple':", err)
+	} else {
+		fmt.Println("apple exist? ", exists)
+	}
 	trie.Delete("apple")
-	fmt.Println("apple exist? ", trie.Search("apple"))
+	exists, err = trie.Search("apple")
+	if err != nil {
+		fmt.Println("Error searching for 'apple':", err)
+	} else {
+		fmt.Println("apple exist? ", exists)
+	}
 }
