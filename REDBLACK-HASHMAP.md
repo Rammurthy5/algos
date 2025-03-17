@@ -1,6 +1,7 @@
 # Hash Maps
 uses a normal array (bucket list) to store key-value pair. each element in the bucket list is a linked list (bucket). it does auto-resizing when the size of the bucket list hits 75% full.
 stores as key-value pair, relies on hashing function to determine where to store each value in an underlying array. challenges are handling collisions (multiple keys produce same index hash) in hashing. Chaining (Store multiple values in a linked list at the same index), open-addressing (Find another empty slot using a probing strategy) are techniques to handle collision. Java uses chaining, python uses open-addressing specialized probing, golang uses open-addressing quadratic-probing.
+a normal hashmap isnt thread-safe, not designed for concurrency. it needs external help to handle that. concurrentHashMaps can be used and they're designed for handling scale.
 ## Resizing
  When the load factor exceeds a certain threshold (75%), hash maps need to resize, which involves rehashing all entries. This operation can take O(n) time, although it's amortized over insertions to maintain an average case of O(1) for insertions. 
 Standard initial capacity of HashMaps in Java8 is 16, Python & Golang offer 1 bucket (8).

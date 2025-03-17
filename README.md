@@ -17,3 +17,8 @@ Finally, actual implementation
 14. avl tree
 15. merkle trie
 16. segment tree / fenwick tree 
+
+distributed locks.
+distributed concurrency.
+node consensus algorithms.
+quorum-based systems.
