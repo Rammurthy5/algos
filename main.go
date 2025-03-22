@@ -9,4 +9,5 @@ func main() {
 	src.BinarySearchTreeRun()
 	src.StacksQueuesRun()
 	src.TrieRun()
+	src.CompressedRadixTrieRun()
 }
