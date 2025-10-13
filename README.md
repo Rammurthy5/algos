@@ -18,6 +18,9 @@ Finally, actual implementation
 15. merkle trie
 16. segment tree / fenwick tree 
 
+# Algorithms
+1. Kadane
+
 distributed locks.
 distributed concurrency.
 node consensus algorithms.
