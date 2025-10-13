@@ -10,4 +10,5 @@ func main() {
 	src.StacksQueuesRun()
 	src.TrieRun()
 	src.CompressedRadixTrieRun()
+	src.KadanesAlgorithm()
 }
