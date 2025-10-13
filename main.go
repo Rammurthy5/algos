@@ -1,6 +1,21 @@
 package main
 
-import "github.com/Rammurthy5/algos/src"
+import (
+	"fmt"
+	"os/exec"
+	"strings"
+
+	"github.com/Rammurthy5/algos/src"
+)
+
+func runPythonScript(args ...string) {
+	cmd := exec.Command("python3", args...)
+	output, err := cmd.CombinedOutput()
+	if err != nil {
+		fmt.Println("Error:", err)
+	}
+	fmt.Printf("Kadane result: %s", strings.TrimSpace(string(output)))
+}
 
 func main() {
 	src.LinkedListRun()
@@ -10,5 +25,5 @@ func main() {
 	src.StacksQueuesRun()
 	src.TrieRun()
 	src.CompressedRadixTrieRun()
-	src.KadanesAlgorithm()
+	runPythonScript("src/kadane_algorithm.py", "1", "-2", "3", "4", "-1", "2", "1", "-5", "4")
 }
