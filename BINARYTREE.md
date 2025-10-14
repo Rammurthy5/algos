@@ -14,6 +14,7 @@ Inorder (Left, Root, Right) - useful for sorted BST traversal.
 Preorder (Root, Left, Right) - useful for tree reconstruction, copying.
 Postorder (Left, Right, Root) - useful for deletion operations.
 Level Order - breadth-first traversal
+DFS is pre-order, post-order, In-order traversals.
 
 ## Usecases
 file storage system hierarchies.

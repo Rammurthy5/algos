@@ -9,17 +9,19 @@ Finally, actual implementation
 6. stacks and queue
 7. standard Trie
 8. compressed trie
+[To-Do]
 9. heaps
-10. bitwise trie
-11. suffix trie
-12. finite state trie
-13. red black tree
-14. avl tree
-15. merkle trie
-16. segment tree / fenwick tree 
+10. red black tree
+11. avl tree
+12. merkle trie
+13. segment tree / fenwick tree 
+14. bitwise trie
+15. suffix trie
+16. finite state trie
 
 # Algorithms
 1. Kadane
+2. Backtracking
 
 distributed locks.
 distributed concurrency.
