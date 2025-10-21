@@ -51,6 +51,26 @@ def count_sequences_target(index, arr, target, curr_sum):
     r = count_sequences_target(index+1, arr, target, curr_sum)
     return l+r  
 
+# combination sum I t.c O(2^t *k) s.c O(t*k)
+def combination_sum(index, target, arr, t_arr):
+    if target == 0:
+        return [t_arr.copy()]   # Return a list with a copy of the valid combination
+    if index >= len(arr):
+        return []               # No combination found
+
+    result = []
+
+    if arr[index] <= target:
+        t_arr.append(arr[index])
+        result += combination_sum(index, target - arr[index], arr, t_arr)  # include current
+        t_arr.pop()
+
+    result += combination_sum(index + 1, target, arr, t_arr)  # exclude current
+
+    return result
+
+print(combination_sum(0, 7, [2, 3, 6, 7], []))
+
 if __name__ == "__main__":
     import sys
     # Example: python3 src/recursion.py subsequences abc
