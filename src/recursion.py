@@ -71,6 +71,26 @@ def combination_sum(index, target, arr, t_arr):
 
 print(combination_sum(0, 7, [2, 3, 6, 7], []))
 
+# combination sum II
+def combination_sum_2(index, target, arr, t_arr):
+    result = []
+    
+    if target == 0:
+        return [t_arr.copy()]
+    
+    for i in range(index, len(arr)):
+        # Skip duplicates (only for the same recursive level)
+        if i > index and arr[i] == arr[i - 1]:
+            continue
+        if arr[i] > target:
+            break  # early stopping due to sorted array
+        t_arr.append(arr[i])
+        result += combination_sum_2(i + 1, target - arr[i], arr, t_arr)
+        t_arr.pop()
+    return result
+
+
+
 if __name__ == "__main__":
     import sys
     # Example: python3 src/recursion.py subsequences abc
