@@ -71,7 +71,7 @@ def combination_sum(index, target, arr, t_arr):
 
 print(combination_sum(0, 7, [2, 3, 6, 7], []))
 
-# combination sum II tc O(k⋅n)
+# combination sum II tc O(log n + (k⋅n))
 def combination_sum_2(index, target, arr, t_arr):
     result = []
     
