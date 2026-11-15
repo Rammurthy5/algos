@@ -3,16 +3,23 @@ Unlike trees or lists, a graph has no single root node or strict hierarchical or
 
 
 • Traversals:
+
 	• Breadth-First Search (BFS): Explores neighbor nodes level by level (great for shortest path in unweighted graphs).
 	• Depth-First Search (DFS): Explores as deep as possible down each branch before backtracking.
+
 • Shortest Path:
+
 	• Dijkstra's Algorithm or Bellman-Ford for weighted graph routes.
+
 • Minimum Spanning Tree (MST):
+
 	• Prim's or Kruskal's algorithms to connect all vertices with minimal total edge weight.
 
 
 # Space Complexity	Best Use Case
+
 Adjacency List	O(V + E)	Sparse graphs (few edges relative to nodes). Stores only existing connections.
+
 Adjacency Matrix	O(V^2)	Dense graphs (almost all nodes are connected). Allocates memory for every possible pair of nodes.
 
 
